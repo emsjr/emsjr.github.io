@@ -2,6 +2,6 @@ body {
     background-color:#0827F5;
 }
 
-@font-face {
-    font-family: Bely;
+.title {
+    color: white;
 }
