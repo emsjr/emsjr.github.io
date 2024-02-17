@@ -1,6 +1,7 @@
 body {
-    background-color:#0827F5;
+    background:#0827F5;
     color:white;
+    display:flex;
 }
 
 .title {
@@ -9,21 +10,4 @@ body {
 
 .text {
     color: white;
-}
-
-a:link {
-    color:whitesmoke;
-    text-decoration: underline;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8);
-    gap: 5px;
-}
-.gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
