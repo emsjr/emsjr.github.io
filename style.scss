@@ -1,20 +1,22 @@
 body {
-    align-items: left;
-    background:#0827F5;
-    display: flex;
-    height: 10vh;
-    justify-content: left;
-}
-body {
-	align-items: center;
 	background: #0827F5;
-	display: flex;
 	height: 100vh;
-	justify-content: center;
+	margin: 0;
+	padding: 0;
+	justify-content: left;
+	align-content: left;
 }
 
-@mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+.text {
+    color: white;
+}
+
+.title{
+    color: white;
+}
+
+.selfie{
+	position:relative;
 }
 
 $animationSpeed: 40s;
@@ -25,20 +27,19 @@ $animationSpeed: 40s;
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
-
 // Styling
 .slider {
-	background: #0827F5;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	background: none;
 	height: 100px;
 	margin: auto;
 	overflow:hidden;
-	position: relative;
-	width: 960px;
+	position: absolute;
+	width:fit-content;
+
+	top:200px;
 	
 	&::before,
 	&::after {
-		@include white-gradient;
 		content: "";
 		height: 100px;
 		position: absolute;
